@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scytale Cipher</title>
+    <link rel="stylesheet" href="scytale.css">
+    <script type="text/javascript" src="scytale.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Scytale Cipher</h1>
+        <form>
+            <label for="message">Enter Message:</label>
+            <textarea id="message" rows="4" cols="50"></textarea>
+            <br>
+            <label for="diameter">Enter Rod Diameter:</label>
+            <input type="number" id="diameter" min="2" value="2">
+            <br>
+            <button type="button" onclick="encrypt()">Encrypt</button>
+            <button type="button" onclick="decrypt()">Decrypt</button>
+            <br>
+            <label for="output">Result:</label>
+            <textarea id="output" rows="4" cols="50" readonly></textarea>
+        </form>
+    </div>
+</body>
+</html>
